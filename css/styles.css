@@ -645,10 +645,10 @@ blockquote {
 .gallery-grid {
     display: grid;
     grid-template-columns: 284px 284px 284px;
-    grid-template-rows: 160px 160px;   /* было repeat(2, 1fr) */
+    grid-template-rows: 160px 160px;   
     gap: 14px;
     width: 880px;
-    height: 334px;                     /* было 430px: 160 + 14 + 160 */
+    height: 334px;                     
     margin: 0 auto;
 }
 
