@@ -1,7 +1,12 @@
-.container {
+body {
     max-width: 960px;
     margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #0F172A;
+    background-color: #ffffff;
 }
+
 .top-bar {
     grid-column: 1 / -1;
     display: flex;
