@@ -1,4 +1,4 @@
- 
+
 body {
     max-width: 960px;
     margin: 0 auto;
@@ -20,7 +20,7 @@ p {
 header {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
     background-color: #ffffff;
 }
  
@@ -304,4 +304,87 @@ header {
     margin-top: 4px;
     font-size: 13px;
     color: #64748B;
+}
+.advantages p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    color: #64748B;
+    font-size: 15px;
+}
+
+.advantages h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.advantages {
+    padding: 40px 40px 90px;
+    background-color: #F8FAFC;
+}
+ 
+.adv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+ 
+.adv-card {
+    position: relative;
+    padding: 70px 24px 28px;
+    background-color: #ffffff;
+    border-top: 4px solid #1D4ED8;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    transition: transform 0.3s;
+}
+ 
+.adv-card:hover {
+    transform: translateY(-4px);
+}
+ 
+.adv-num {
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    font-family: 'Sora', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #DBEAFE;
+}
+ 
+.adv-icon {
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    font-size: 22px;
+}
+ 
+.adv-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+ 
+.adv-card p {
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #64748B;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: #1D4ED8;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'inter', sans-serif;
 }
