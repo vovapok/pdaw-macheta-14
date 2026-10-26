@@ -388,3 +388,142 @@ header {
     font-weight: 700;
     font-family: 'inter', sans-serif;
 }
+
+.courses {
+    padding: 70px 40px 80px;
+}
+ 
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+}
+ 
+.course-card {
+    padding: 8px 8px 14px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+ 
+.course-card:hover {
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.1);
+    transform: translateY(-3px);
+}
+ 
+.course-img {
+    position: relative;
+}
+ 
+.course-img img {
+    display: block;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: #CBD5E1;
+}
+ 
+.tag {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: #EA580C;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+}
+ 
+.heart {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+ 
+.course-card h3 {
+    margin-top: 12px;
+    padding: 0 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+ 
+.course-desc {
+    margin-top: 4px;
+    padding: 0 6px;
+    font-size: 12px;
+    color: #64748B;
+}
+ 
+.course-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding: 0 6px;
+}
+ 
+.price {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1D4ED8;
+}
+ 
+.price s {
+    margin-left: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #94A3B8;
+}
+.courses {
+    padding: 40px 40px 80px;
+}
+.plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #1D4ED8;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+ 
+.plus:hover {
+    background-color: #1e40af;
+}
+.courses h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    style: bold;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    color: #64748B;
+    font-size: 15px;
+    weight: 400;
+}
