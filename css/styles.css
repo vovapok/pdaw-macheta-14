@@ -129,7 +129,7 @@ td.hour {
     text-align: left;
 }
  
-/* ---------- 9. Abonare ---------- */
+
 .subscribe {
     display: flex;
     align-items: center;
@@ -186,7 +186,7 @@ td.hour {
     background-color: #C2410C;
 }
  
-/* ---------- 10. Footer ---------- */
+
 footer {
     padding: 50px 40px 30px;
     background-color: #0F172A;
@@ -272,7 +272,7 @@ footer li a:hover {
     color: #94A3B8;
 }
  
-/* ---------- 11. Buton chat ---------- */
+
 .chat-btn {
     position: fixed;
     right: 24px;
@@ -1131,7 +1131,7 @@ footer li a:hover {
     height: 60px;
     border-radius: 50%;
     background-color: #EA580C;
-    color: #ffffff; /* Добавил цвет для иконки/текста */
+    color: #ffffff; 
     font-size: 26px;
     text-decoration: none;
     z-index: 100;
