@@ -38,3 +38,16 @@
     text-decoration: none;
     border-bottom: 3px solid transparent;
 }
+.button-test {
+    margin-right: 40px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    bacground: #1D4ED8;
+    color: #1D4ED8;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+.button-test:hover {
+    background: #1D4ED8;
+}
