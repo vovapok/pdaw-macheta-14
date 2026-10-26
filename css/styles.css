@@ -25,6 +25,10 @@ header {
 }
  
 .nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +45,7 @@ header {
 }
  
 .logo-accent {
-    color: #EA580C;
+    color: #1D4ED8;
 }
  
 .nav-bar ul {
@@ -75,8 +79,222 @@ header {
  
 .nav-bar ul a.active {
     color: #1D4ED8;
-    border-bottom-color: #1D4ED8;
 }
+.schedule {
+    padding: 70px 40px 80px;
+}
+ 
+table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+ 
+thead {
+    background-color: #0F172A;
+    color: #ffffff;
+}
+ 
+th {
+    padding: 14px 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+ 
+td {
+    height: 56px;
+    padding: 8px 4px;
+    border-bottom: 1px solid #E2E8F0;
+    text-align: center;
+}
+ 
+td.hour {
+    padding-left: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+ 
+.lesson {
+    display: block;
+    padding: 10px 6px;
+    border-left: 3px solid #1D4ED8;
+    border-radius: 2px;
+    background-color: #DBEAFE;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+ 
+/* ---------- 9. Abonare ---------- */
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    background-color: #1D4ED8;
+    color: #ffffff;
+}
+ 
+.subscribe h2 {
+    font-size: 24px;
+    text-align: left;
+}
+ 
+.subscribe p {
+    margin-top: 8px;
+    color: #DBEAFE;
+}
+ 
+.subscribe-form {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    width: 440px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+ 
+.subscribe-form input {
+    flex: 1;
+    padding: 10px 14px;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+ 
+.subscribe-form button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #EA580C;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.subscribe-form button:hover {
+    background-color: #C2410C;
+}
+ 
+/* ---------- 10. Footer ---------- */
+footer {
+    padding: 50px 40px 30px;
+    background-color: #0F172A;
+    color: #CBD5E1;
+}
+ 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+ 
+.footer-about .logo {
+    color: #ffffff;
+}
+ 
+.footer-about p {
+    margin-top: 14px;
+    max-width: 280px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+ 
+footer h4 {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #ffffff;
+}
+ 
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+footer li {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+ 
+footer li a {
+    color: #CBD5E1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+ 
+footer li a:hover {
+    color: #ffffff;
+}
+ 
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+ 
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #1E293B;
+    color: #CBD5E1;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+ 
+.socials a:hover {
+    background-color: #1D4ED8;
+}
+ 
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid #1E293B;
+    font-size: 12px;
+    color: #94A3B8;
+}
+ 
+/* ---------- 11. Buton chat ---------- */
+.chat-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #EA580C;
+    font-size: 26px;
+    text-decoration: none;
+    z-index: 20;
+    transition: transform 0.3s;
+}
+ 
+.chat-btn:hover {
+    transform: scale(1.1);
+}
+ 
+
  
 .button-test {
     padding: 10px 20px;
@@ -668,4 +886,262 @@ blockquote {
 .img-box:nth-child(1),
 .img-box:nth-child(3) {
     grid-row: span 2;
+}
+
+.logo-accent1 {
+    color: #EA580C;
+}
+
+.schedule {
+    padding: 70px 40px 90px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.schedule .label {
+    display: inline-block;
+    color: #1D4ED8;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.schedule h2 {
+    font-size: 34px;
+    color: #0F172A;
+    margin-bottom: 0px;
+    margin: 0;
+}
+
+.schedule .subtitle {
+    color: #64748B;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+thead {
+    background-color: #0F172A;
+    color: #ffffff;
+}
+
+th {
+    padding: 16px 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #F1F5F9; 
+    vertical-align: middle;
+}
+
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+td.hour {
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.lesson {
+    display: block;
+    padding: 14px 10px;
+    border-left: 3px solid #1D4ED8;
+    border-radius: 4px;
+    background-color: #DBEAFE; 
+    font-size: 13px;
+    font-weight: 600;
+    color: #0F172A;
+    text-align: left;
+    white-space: nowrap; 
+}
+
+/* bo */
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    background-color: #1D4ED8;
+    color: #ffffff;
+}
+
+.subscribe-format2 form {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 3px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 440px; 
+}
+
+
+.subscribe h2 {
+    margin: 0px;
+    font-size: 24px;
+    text-align: left;
+}
+ 
+.subscribe p {
+    margin: 0px;
+    color: #DBEAFE;
+}
+ 
+ 
+.subscribe-form input {
+    flex: 1;
+    padding: 10px 14px;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+ 
+.subscribe-format2 button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #EA580C; 
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap; 
+}
+
+.subscribe-format2 button:hover {
+    background-color: #C2410C; 
+}
+ 
+
+footer {
+    padding: 50px 40px 30px;
+    background-color: #0F172A;
+    color: #CBD5E1;
+}
+ 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+ 
+.footer-about .logo {
+    color: #ffffff;
+}
+ 
+.footer-about p {
+    margin-top: 14px;
+    max-width: 280px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+ 
+footer h4 {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #ffffff;
+}
+ 
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+footer li {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+ 
+footer li a {
+    color: #CBD5E1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+ 
+footer li a:hover {
+    color: #ffffff;
+}
+ 
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+ 
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #1E293B;
+    color: #CBD5E1;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+ 
+.socials a:hover {
+    background-color: #1D4ED8;
+}
+ 
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid #1E293B;
+    font-size: 12px;
+    color: #94A3B8;
+}
+ 
+
+.chat-btn {
+    position: fixed;
+    left: 50%; 
+    margin-left: 400px; 
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #EA580C;
+    color: #ffffff; /* Добавил цвет для иконки/текста */
+    font-size: 26px;
+    text-decoration: none;
+    z-index: 100;
+    transition: transform 0.3s;
+}
+ 
+.chat-btn:hover {
+    transform: scale(1.1);
+}
+.emailg {
+    outline: none;
+    border: none;
 }
